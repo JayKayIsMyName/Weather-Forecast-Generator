@@ -63,9 +63,8 @@ def generate_html(input_file, output_html_file):
                 <th>Temperature</th>
                 <th>Forecast</th>
             </tr>
-
-    # gets third line from text file for generated datetime        
-    """.format(lines[2].strip()) 
+            
+    """.format(lines[2].strip())  # gets third line from text file for generated datetime  
 
     # iterates through text file, fills table with forecast data
     for i in range(3, len(lines), 1):
